@@ -13,19 +13,16 @@ public class Tela_Inicial extends AppCompatActivity {
         setContentView(R.layout.activity_tela__inicial);
     }
 
-
+    //Botões
     public void Login(View view){
-       Intent intent = new Intent(this,Tela_Login.class);
-        startActivity(intent);
+        startActivity( new Intent(this,Tela_Login.class));
     }
 
     public void Cadastrar(View view){
-        Intent Intent = new Intent(this,Tela_Cadastro.class);
-        startActivity(Intent);
+        startActivity( new Intent(this,Tela_Cadastro.class));
     }
 
     public void Sobre(View view){
-        Intent Intent = new Intent(this,Tela_Sobre.class);
-        startActivity(Intent);
+        startActivity(new Intent (this,Tela_Sobre.class));
     }
 }
