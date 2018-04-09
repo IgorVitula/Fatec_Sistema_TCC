@@ -1,4 +1,4 @@
-package com.ntecprograms.samu;
+package com.ntecprograms.samu; //Primeira Tela do Projeto
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +15,6 @@ public class Tela_Inicial extends AppCompatActivity {
 
 
     public void Login(View view){
-
        Intent intent = new Intent(this,Tela_Login.class);
         startActivity(intent);
     }
@@ -26,8 +25,6 @@ public class Tela_Inicial extends AppCompatActivity {
     }
 
     public void Sobre(View view){
-
-
         Intent Intent = new Intent(this,Tela_Sobre.class);
         startActivity(Intent);
     }
