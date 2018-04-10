@@ -11,18 +11,33 @@ public class Tela_Inicial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela__inicial);
-    }
+        
+        //Referencia dos Botões
+        Button TelaLogin =(Button)findViewById(R.id.btnLogin);
+        Button AcessarTelaCad =(Button)findViewById(R.id.btnCadastro);
+        Button TelaSobre =(Button)findViewById(R.id.btnSobre);
+        
+        //Botoes Acessando cada Tela
+        TelaLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(Tela_Inicial.this,Tela_Login.class));
+            }
+        });
 
-    //Botões
-    public void Login(View view){
-        startActivity( new Intent(this,Tela_Login.class));
-    }
+        AcessarTelaCad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(Tela_Inicial.this,Tela_Cadastro.class));
+            }
+        });
 
-    public void Cadastrar(View view){
-        startActivity( new Intent(this,Tela_Cadastro.class));
-    }
+        TelaSobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(Tela_Inicial.this,Tela_Sobre.class));
+            }
+        });
 
-    public void Sobre(View view){
-        startActivity(new Intent (this,Tela_Sobre.class));
     }
 }
