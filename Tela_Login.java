@@ -13,14 +13,13 @@ public class Tela_Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela__login);
-
+        //Referencias ao Botões e EditTexts do Login, senha e Cpf
         Button Logar =(Button)findViewById(R.id.btnLogar);
-
         final EditText Login =(EditText)findViewById(R.id.edtLogin);
         final EditText Senha =(EditText)findViewById(R.id.edtSenha);
         final EditText CpfLogin =(EditText)findViewById(R.id.edtCpfLogin);
 
-
+        //Validação de campos
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
