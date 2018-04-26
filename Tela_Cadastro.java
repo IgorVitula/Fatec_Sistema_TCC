@@ -1,4 +1,4 @@
-package com.ntecprograms.samu;
+package com.ntecprograms.helpmovelAmbulancia;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
