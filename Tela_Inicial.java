@@ -1,4 +1,4 @@
-package com.ntecprograms.samu; //Primeira Tela do Projeto
+package com.ntecprograms.HelpMovelAmbulancia; //Primeira Tela do Projeto
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
